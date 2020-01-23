@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`close-server throws error when closing server that already is closed 1`] = `[Error [ERR_SERVER_NOT_RUNNING]: Server is not running.]`;
+
+exports[`close-server throws error when closing server that did not run 1`] = `[Error [ERR_SERVER_NOT_RUNNING]: Server is not running.]`;
