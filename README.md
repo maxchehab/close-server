@@ -21,7 +21,7 @@ const srv = http.createServer();
 srv.listen()
 ...
 
-await closeServer()
+await closeServer(srv)
 ```
 
 ## Authors
