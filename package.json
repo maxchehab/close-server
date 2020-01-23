@@ -1,6 +1,6 @@
 {
   "name": "close-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Promisified http.Server.close()",
   "main": "dist/index.js",
   "repository": "https://github.com/maxchehab/close-server",

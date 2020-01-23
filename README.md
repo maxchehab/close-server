@@ -16,15 +16,15 @@ Pass a `http.Server` to `close-server` and it will return a `Promise` which clos
 ```js
 const http = require('http');
 const closeServer = require('close-server');
- 
+
 const srv = http.createServer();
 srv.listen();
 ...
 
-closeServer(srv).catch(error -> console.error(error));
+closeServer(srv).catch(error => console.error(error));
 ```
 
-or 
+or
 
 ```ts
 import http from 'http';
@@ -40,7 +40,6 @@ try {
 }
 ```
 
-
-
 ## Authors
+
 - [Max Chehab](https://github.com/maxchehab)
