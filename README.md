@@ -1,6 +1,6 @@
 # close-server
 
-Promisified `http.Server.close()`
+Promisified `net.Server.close()`
 
 ## Usage
 
@@ -11,7 +11,7 @@ npm install close-server
 yarn add close-server
 ```
 
-Pass a `http.Server` to `close-server` and it will return a `Promise` which closes the server.
+Pass a `net.Server` (such as `http.Server`) to `close-server` and it will return a `Promise` which closes the server.
 
 ```ts
 import http from 'http';
