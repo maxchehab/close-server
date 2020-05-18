@@ -1,13 +1,9 @@
-import http from 'http';
+import net from 'net';
 
-export default function closeServer(server: http.Server) {
+export default function closeServer(server: net.Server) {
   return new Promise<void>((resolve, reject) =>
-    server.close((err?: Error) => {
-      if (err) {
-        reject(err);
-      }
-
-      resolve();
-    }),
+    server.close((err?: Error) =>
+      err ? reject(err) : resolve()
+    )
   );
 }
